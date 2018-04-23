@@ -5,9 +5,9 @@ function getStreetNumber(streetString) {
 
 function produceDrivingRange(blockRange) {
   return function(street1, street2) {
-    const street_number1 = getStreetNumber(street1);
-    const street_number2 = getStreetNumber(street2);
-    const distance = Math.abs(street_number1 - street_number2);
+    const streetNumber1 = getStreetNumber(street1);
+    const streetNumber2 = getStreetNumber(street2);
+    const distance = Math.abs(streetNumber1 - streetNumber2);
     const difference = Math.abs(distance - blockRange);
 
     if (distance <= blockRange) {
